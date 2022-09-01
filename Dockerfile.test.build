@@ -1,0 +1,10 @@
+FROM microsoft/aspnetcore-build:2.0.2
+WORKDIR /app
+
+COPY Com.Anqa.Service.Warehouse.Lib/*.csproj ./Com.Anqa.Service.Warehouse.Lib/
+COPY Com.Anqa.Service.Warehouse.WebApi/*.csproj ./Com.Anqa.Service.Warehouse.WebApi/
+RUN dotnet restore ./Com.Anqa.Service.Warehouse.WebApi/
+
+COPY Com.Anqa.Service.Warehouse.Lib/. ./Com.Anqa.Service.Warehouse.Lib/
+COPY Com.Anqa.Service.Warehouse.WebApi/. ./Com.Anqa.Service.Warehouse.WebApi/
+RUN dotnet publish ./Com.Anqa.Service.Warehouse.WebApi/ --output /out/ --configuration Release
