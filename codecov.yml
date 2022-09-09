@@ -1,0 +1,4 @@
+ignore:
+  - "Com.Anqa.Service.Warehouse.Lib/Migrations" 
+  - "Com.Anqa.Service.Warehouse.WebApi/Startup.cs"
+  - "Com.Anqa.Service.Warehouse.WebApi/SchedulerJobs/MasterRegistry.cs"
