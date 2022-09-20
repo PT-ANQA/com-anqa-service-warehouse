@@ -373,8 +373,11 @@ namespace Com.Anqa.Service.Warehouse.Lib.Facades
             foreach (SPKDocsCsvViewModel productVM in Data)
             {
                 ErrorMessage = "";
-
-                if (string.IsNullOrWhiteSpace(productVM.PackingList))
+				if (!(productVM.PackingList.Contains("ANQ")))
+				{
+					ErrorMessage = string.Concat(ErrorMessage, "Format Packing List harus 'xxxx/ANQ-FN/xx/xx, ");
+				}
+				if (string.IsNullOrWhiteSpace(productVM.PackingList))
                 {
                     ErrorMessage = string.Concat(ErrorMessage, "PackingList tidak boleh kosong, ");
                 }
