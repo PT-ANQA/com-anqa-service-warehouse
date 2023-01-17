@@ -1,11 +1,11 @@
-//using Com.BatikSolo.Service.Purchasing.Lib.Enums;
-//using Com.BatikSolo.Service.Purchasing.Lib.ViewModels.GarmentExternalPurchaseOrderViewModel;
+//using Com.Anqa.Service.Purchasing.Lib.Enums;
+//using Com.Anqa.Service.Purchasing.Lib.ViewModels.GarmentExternalPurchaseOrderViewModel;
 //using System;
 //using System.Collections.Generic;
 //using System.Text;
 //using Xunit;
 
-//namespace Com.BatikSolo.Service.Purchasing.Test.Helpers
+//namespace Com.Anqa.Service.Purchasing.Test.Helpers
 //{
 //    public class COAGeneratorTest
 //    {

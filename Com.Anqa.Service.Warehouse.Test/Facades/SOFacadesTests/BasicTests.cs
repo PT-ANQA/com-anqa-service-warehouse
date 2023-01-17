@@ -1,9 +1,9 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SODataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SODataUtils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
@@ -16,10 +16,10 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SOViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SOViewModel;
 using Microsoft.Extensions.Primitives;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.SOFacadesTests
+namespace Com.Anqa.Service.Warehouse.Test.Facades.SOFacadesTests
 {
     public class BasicTests
     {

@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades.Stores;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.TransferModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.TransferStockControllers;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades.Stores;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.TransferStockControllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +23,7 @@ using Xunit;
 using System.Net;
 using Newtonsoft.Json;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.Store.TransferStockControllerTest
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.Store.TransferStockControllerTest
 {
     public class TransferStockReportControllerTest
     {

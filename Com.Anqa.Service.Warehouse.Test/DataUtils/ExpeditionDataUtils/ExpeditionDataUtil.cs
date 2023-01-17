@@ -1,14 +1,14 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.Expeditions;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Models.Expeditions;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.ExpeditionDataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.ExpeditionDataUtils
 {
     public class ExpeditionDataUtil
     {

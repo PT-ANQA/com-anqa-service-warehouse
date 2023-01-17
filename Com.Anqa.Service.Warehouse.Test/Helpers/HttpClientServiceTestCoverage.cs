@@ -1,9 +1,9 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Services;
+﻿using Com.Anqa.Service.Warehouse.Lib.Services;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Helpers
+namespace Com.Anqa.Service.Warehouse.Test.Helpers
 {
     public class HttpClientServiceTestCoverage
     {

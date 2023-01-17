@@ -1,6 +1,6 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Helpers;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
+﻿using Com.Anqa.Service.Warehouse.Lib.Helpers;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Newtonsoft.Json;
 using System;
@@ -10,7 +10,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Helpers
+namespace Com.Anqa.Service.Warehouse.Test.Helpers
 {
     public class HttpClientTestService : IHttpClientService
     {

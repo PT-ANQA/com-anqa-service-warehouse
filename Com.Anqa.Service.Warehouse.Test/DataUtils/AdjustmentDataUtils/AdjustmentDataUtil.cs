@@ -1,12 +1,12 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Facades.AdjustmentFacade;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.AdjustmentDocsModel;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib.Facades.AdjustmentFacade;
+using Com.Anqa.Service.Warehouse.Lib.Models.AdjustmentDocsModel;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.AdjustmentDataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.AdjustmentDataUtils
 {
     public class AdjustmentDataUtil
     {

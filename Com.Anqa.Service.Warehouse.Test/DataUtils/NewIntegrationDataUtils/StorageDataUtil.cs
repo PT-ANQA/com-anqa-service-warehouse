@@ -1,11 +1,11 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
-using Com.BatikSolo.Service.Warehouse.WebApi.Helpers;
+﻿using Com.Anqa.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
+using Com.Anqa.Service.Warehouse.WebApi.Helpers;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.NewIntegrationDataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.NewIntegrationDataUtils
 {
     public class StorageDataUtil
     {
