@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.Expeditions;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.ExpeditionControllers;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.Expeditions;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.ExpeditionControllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +22,7 @@ using System.Security.Claims;
 using System.Text;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.ExpeditionTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.ExpeditionTests
 {
     public class ExpeditionReportControllerTests
     {

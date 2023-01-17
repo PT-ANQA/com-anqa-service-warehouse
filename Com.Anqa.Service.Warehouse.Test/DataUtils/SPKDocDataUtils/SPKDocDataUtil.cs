@@ -1,12 +1,12 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+﻿using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils
 {
 	public class SPKDocDataUtil
 	{

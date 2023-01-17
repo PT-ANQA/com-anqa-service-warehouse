@@ -5,20 +5,20 @@ using System.Net;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.SPKDocControllerFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.SPKDocControllerFacades
 {
     public class SPKDocControllerFacedeTests
     {

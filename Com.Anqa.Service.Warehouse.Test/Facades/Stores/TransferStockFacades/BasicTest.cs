@@ -1,12 +1,12 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades.Stores;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.TransferOutDataUtils;
-using Com.BatikSolo.Service.Warehouse.WebApi.Helpers;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Facades.Stores;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.TransferOutDataUtils;
+using Com.Anqa.Service.Warehouse.WebApi.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
@@ -21,7 +21,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.Stores.TransferStockFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.Stores.TransferStockFacades
 {
     public class BasicTest
     {

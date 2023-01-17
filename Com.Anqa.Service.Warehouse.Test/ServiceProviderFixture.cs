@@ -1,12 +1,12 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
+﻿using Com.Anqa.Service.Warehouse.Lib;
 //using Com.MM.Service.Warehouse.Lib.Facades;
 //using Com.MM.Service.Warehouse.Lib.Facades.InternalPO;
 //using Com.MM.Service.Warehouse.Lib.Facades.Expedition;
 //using Com.MM.Service.Warehouse.Lib.Facades.Report;
-using Com.BatikSolo.Service.Warehouse.Lib.Helpers;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Serializers;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.Helpers;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Serializers;
+using Com.Anqa.Service.Warehouse.Lib.Services;
 //using Com.MM.Service.Warehouse.Lib.ViewModels.IntegrationViewModel;
 //using Com.MM.Service.Warehouse.Lib.ViewModels.PurchaseOrder;
 //using Com.MM.Service.Warehouse.Lib.ViewModels.UnitReceiptNote;
@@ -14,8 +14,8 @@ using Com.BatikSolo.Service.Warehouse.Lib.Services;
 //using Com.MM.Service.Warehouse.Test.DataUtils.PurchaseRequestDataUtils;
 //using Com.MM.Service.Warehouse.Test.DataUtils.InternalPurchaseOrderDataUtils;
 //using Com.MM.Service.Warehouse.Test.DataUtils.UnitReceiptNote;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Helpers;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -44,12 +44,12 @@ using Xunit;
 //using Com.MM.Service.Warehouse.Lib.Facades.MonitoringCentralBillExpenditureFacades;
 //using Com.MM.Service.Warehouse.Lib.Facades.MonitoringCorrectionNoteReceptionFacades;
 //using Com.MM.Service.Warehouse.Lib.Facades.MonitoringCorrectionNoteExpenditureFacades;
-using Com.BatikSolo.Service.Warehouse.Lib.Utilities.Currencies;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.TransferDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
+using Com.Anqa.Service.Warehouse.Lib.Utilities.Currencies;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.TransferDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
 
-namespace Com.BatikSolo.Service.Warehouse.Test
+namespace Com.Anqa.Service.Warehouse.Test
 {
     public class ServiceProviderFixture
     {
@@ -84,10 +84,10 @@ namespace Com.BatikSolo.Service.Warehouse.Test
             IConfigurationRoot configuration = new ConfigurationBuilder()
                 .AddInMemoryCollection(new List<KeyValuePair<string, string>>
                 {
-                    new KeyValuePair<string, string>(Constant.SECRET, "BatikSoloDEVELOPMENT"),
+                    new KeyValuePair<string, string>(Constant.SECRET, "AnqaDEVELOPMENT"),
                     new KeyValuePair<string, string>("ASPNETCORE_ENVIRONMENT", "Test"),
-                    //new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=(localdb)\\mssqllocaldb;Database=com-BatikSolo-db-test;Trusted_Connection=True;MultipleActiveResultSets=true"),
-                    new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=localhost,1401;Database=com.BatikSolo.db.warehouse.service.test;User Id=sa;Password=Standar123.;MultipleActiveResultSets=True;"),
+                    //new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=(localdb)\\mssqllocaldb;Database=com-Anqa-db-test;Trusted_Connection=True;MultipleActiveResultSets=true"),
+                    new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=localhost,1401;Database=com.Anqa.db.warehouse.service.test;User Id=sa;Password=Standar123.;MultipleActiveResultSets=True;"),
                     new KeyValuePair<string, string>(Constant.MONGODB_CONNECTION, "mongodb://localhost:27017/admin")
                 })
                 .Build();

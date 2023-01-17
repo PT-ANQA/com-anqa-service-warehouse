@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.InventoryViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.InventoriesControlles;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.InventoryViewModel;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.InventoriesControlles;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +18,7 @@ using System.Security.Claims;
 using System.Text;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.InvetoriesTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.InvetoriesTests
 {
     public class InventoriesControllerTest
     {

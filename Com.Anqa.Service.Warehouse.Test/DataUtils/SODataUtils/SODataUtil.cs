@@ -1,14 +1,14 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.SOInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SOModel;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.SOInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.SOModel;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.SODataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.SODataUtils
 {
     public class SODataUtil
     {

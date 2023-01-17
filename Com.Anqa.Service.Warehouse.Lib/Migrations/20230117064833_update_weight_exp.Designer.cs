@@ -11,9 +11,10 @@ using System;
 namespace Com.Anqa.Service.Warehouse.Lib.Migrations
 {
     [DbContext(typeof(WarehouseDbContext))]
-    partial class WarehouseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230117064833_update_weight_exp")]
+    partial class update_weight_exp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

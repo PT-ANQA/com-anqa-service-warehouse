@@ -1,9 +1,9 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.NewIntegrationDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.NewIntegrationDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Primitives;
@@ -18,9 +18,9 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-using static Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils.SPKDocDataUtil;
+using static Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils.SPKDocDataUtil;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.PkpbjFacades
 {
 	public class UploadTest
 	{
@@ -105,9 +105,9 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 			return dbContext;
 		}
 
-		private SPKDocDataUtil dataUtil(Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade, string testName)
+		private SPKDocDataUtil dataUtil(Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade, string testName)
 		{
-			var pkbbjfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
+			var pkbbjfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
 			//var sPKDocDataUtil = new SPKDocDataUtil(pkbbjfacade);
 			//var transferFacade = new TransferFacade(ServiceProvider, _dbContext(testName));
 			//var transferDataUtil = new TransferDataUtil(transferFacade, sPKDocDataUtil);
@@ -115,9 +115,9 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 			return new SPKDocDataUtil(facade);
 		}
 
-		private SPKDocDataUtilCSV dataUtilCSV(Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade, string testName)
+		private SPKDocDataUtilCSV dataUtilCSV(Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade, string testName)
 		{
-			var pkbbjfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
+			var pkbbjfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
 			//var sPKDocDataUtil = new SPKDocDataUtil(pkbbjfacade);
 			//var transferFacade = new TransferFacade(ServiceProvider, _dbContext(testName));
 			//var transferDataUtil = new TransferDataUtil(transferFacade, sPKDocDataUtil);
@@ -128,7 +128,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 		[Fact]
 		public async Task Should_Success_Upload_Data()
 		{
-			Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
+			Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
 			var model = await dataUtil(facade, GetCurrentMethod()).GetTestData();
 			var Response = facade.UploadData(model, USERNAME);
 			Assert.NotNull(Response);
@@ -137,7 +137,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 		[Fact]
 		public void Should_Success_Validate_UploadData()
 		{
-			Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
+			Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
 			var viewModel = dataUtilCSV(facade, GetCurrentMethod()).GetNewData();
 			var viewModel2 = dataUtilCSV(facade, GetCurrentMethod()).GetNewData2();
 			var viewModel3 = dataUtilCSV(facade, GetCurrentMethod()).GetNewData3();
@@ -160,7 +160,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 		[Fact]
 		public void Should_Success_Validate_UploadDataNoErrorMessage()
 		{
-			Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
+			Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
 			var viewModel = dataUtilCSV(facade, GetCurrentMethod()).GetNewDataValid();
 
 			List<SPKDocsCsvViewModel> data = new List<SPKDocsCsvViewModel>();
@@ -177,7 +177,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 		[Fact]
 		public async Task Should_Success_Map_ViewModel()
 		{
-			Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
+			Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
 			var viewModel = dataUtilCSV(facade, GetCurrentMethod()).GetNewData();
 			viewModel.code = "code";
 			viewModel.name = "name";
@@ -200,7 +200,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
 		}
 		[Fact]
 		public  async Task ShouldSuccesReadForUpload(){
-			Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
+			Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
 			var viewModel = dataUtilCSV(facade, GetCurrentMethod()).GetNewData();
 			viewModel.code = "code";
 			viewModel.name = "name";
@@ -224,7 +224,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.PkpbjFacades
         //[Fact]
         //public async Task Should_Success_Map_ViewModel2()
         //{
-        //    Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
+        //    Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade facade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(GetServiceProvider().Object, _dbContext(GetCurrentMethod()));
         //    var viewModel = dataUtilCSV(facade, GetCurrentMethod()).GetNewData();
         //    viewModel.code = "code";
         //    viewModel.name = "name";
