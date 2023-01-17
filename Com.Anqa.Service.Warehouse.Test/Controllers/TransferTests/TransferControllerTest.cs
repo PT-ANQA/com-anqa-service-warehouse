@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.TransferInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.TransferModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.TransferViewModels;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.Transfer;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.TransferInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.TransferViewModels;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.Transfer;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +19,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.TransferTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.TransferTests
 {
     public class TransferControllerTest
     {

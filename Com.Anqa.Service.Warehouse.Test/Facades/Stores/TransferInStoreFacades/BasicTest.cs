@@ -1,15 +1,15 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades.Stores;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.TransferModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.ExpeditionDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.TransferDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Facades.Stores;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.ExpeditionDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.TransferDataUtils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
@@ -22,7 +22,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.Stores.TransferInStoreFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.Stores.TransferInStoreFacades
 {
     public class BasicTest
     {
@@ -73,7 +73,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.Stores.TransferInStoreFac
 
         private TransferDataUtil dataUtil(TransferFacade facade, string testName)
         {
-            var pkbbjfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
+            var pkbbjfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
             var sPKDocDataUtil = new SPKDocDataUtil(pkbbjfacade);
             var transferFacade = new TransferFacade(ServiceProvider, _dbContext(testName));
             var transferDataUtil = new TransferDataUtil(transferFacade, sPKDocDataUtil);
@@ -83,9 +83,9 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.Stores.TransferInStoreFac
 
         private TransferInStoreDataUtil dataUtilTransfer(TransferFacade facade, string testName)
         {
-            var pkbbjfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
-            var expeditionfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.ExpeditionFacade(ServiceProvider, _dbContext(testName));
-            var inventoryfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.InventoryFacade(ServiceProvider, _dbContext(testName));
+            var pkbbjfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
+            var expeditionfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.ExpeditionFacade(ServiceProvider, _dbContext(testName));
+            var inventoryfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.InventoryFacade(ServiceProvider, _dbContext(testName));
 
             var sPKDocDataUtil = new SPKDocDataUtil(pkbbjfacade);
             var inventoryDataUtil = new InventoryDataUtil(inventoryfacade, _dbContext(testName));

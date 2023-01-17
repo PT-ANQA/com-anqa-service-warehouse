@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.PkbjInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.PkbjInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
 using Com.MM.Service.Core.WebApi.Controllers.v1.UploadControllers;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
@@ -18,7 +18,7 @@ using System.Security.Claims;
 using System.Text;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.UploadControllerTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.UploadControllerTests
 {
 	public class PkpbjUploadControllerTest
 	{

@@ -1,10 +1,10 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.TransferDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.TransferDataUtils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
@@ -15,12 +15,12 @@ using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.TransferInFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.TransferInFacades
 {
     public class BasicTest
     {
@@ -76,7 +76,7 @@ namespace Com.BatikSolo.Service.Warehouse.Test.Facades.TransferInFacades
 
         private TransferDataUtil dataUtil(TransferFacade facade, string testName)
         {
-            var pkbbjfacade = new Com.BatikSolo.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
+            var pkbbjfacade = new Com.Anqa.Service.Warehouse.Lib.Facades.PkpbjFacade(ServiceProvider, _dbContext(testName));
             var sPKDocDataUtil = new SPKDocDataUtil(pkbbjfacade);
             var transferFacade = new TransferFacade(ServiceProvider, _dbContext(testName));
             var transferDataUtil = new TransferDataUtil(transferFacade, sPKDocDataUtil);

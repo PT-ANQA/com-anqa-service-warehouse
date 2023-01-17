@@ -1,7 +1,7 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.Utilities.CacheManager.CacheData;
-using Com.BatikSolo.Service.Warehouse.Lib.Utilities.Currencies;
+﻿using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.Utilities.CacheManager.CacheData;
+using Com.Anqa.Service.Warehouse.Lib.Utilities.Currencies;
 using Moq;
 using Newtonsoft.Json;
 using System;
@@ -13,7 +13,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Utils
+namespace Com.Anqa.Service.Warehouse.Test.Utils
 {
     public class CurrencyProviderTest
     {
