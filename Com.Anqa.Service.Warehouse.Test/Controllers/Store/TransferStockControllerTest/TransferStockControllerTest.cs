@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades.Stores;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.Stores.TransferStocksInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.TransferModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.TransferViewModels;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.Stores.TransferStockController;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades.Stores;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.Stores.TransferStocksInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.TransferViewModels;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.Stores.TransferStockController;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +25,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.Store.TransferStockControllerTest
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.Store.TransferStockControllerTest
 {
 	public class TransferStockControllerTest
 	{

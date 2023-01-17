@@ -1,13 +1,13 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades.AdjustmentFacade;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.AdjustmentDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.AdjustmentDocsViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.AdjustmentDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.NewIntegrationDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Facades.AdjustmentFacade;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.AdjustmentDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.AdjustmentDocsViewModel;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.AdjustmentDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.NewIntegrationDataUtils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
@@ -22,7 +22,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.AdjustmentFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.AdjustmentFacades
 {
     public class BasicTest
     {

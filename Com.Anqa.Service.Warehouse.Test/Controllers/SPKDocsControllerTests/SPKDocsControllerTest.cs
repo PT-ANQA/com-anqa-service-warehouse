@@ -4,24 +4,24 @@ using System.Net;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.PkbjInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.SPKInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.PkbjByUserViewModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.PkpbjControllers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.SpkDocsControllers;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.PkbjInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.SPKInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.NewIntegrationViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.PkbjByUserViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.PkpbjControllers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.SpkDocsControllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.SPKDocsControllerTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.SPKDocsControllerTests
 {
     public class SPKDocsControllerTest
     {

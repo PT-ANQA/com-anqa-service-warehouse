@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.AdjustmentInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.AdjustmentDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.AdjustmentDocsViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.Adjustment;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.AdjustmentInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.AdjustmentDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.AdjustmentDocsViewModel;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.Adjustment;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +27,7 @@ using System.Threading.Tasks;
 using Xunit;
 
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.AdjustmentTest
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.AdjustmentTest
 {
     public class AdjustmentControllerTest
     {

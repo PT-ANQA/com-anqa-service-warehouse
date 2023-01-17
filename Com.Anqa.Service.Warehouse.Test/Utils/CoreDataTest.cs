@@ -1,5 +1,5 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Utilities.CacheManager;
-using Com.BatikSolo.Service.Warehouse.Lib.Utilities.CacheManager.CacheData;
+﻿using Com.Anqa.Service.Warehouse.Lib.Utilities.CacheManager;
+using Com.Anqa.Service.Warehouse.Lib.Utilities.CacheManager.CacheData;
 //using Com.MM.Service.Warehouse.Lib.ViewModels.ExternalPurchaseOrderViewModel;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Utils
+namespace Com.Anqa.Service.Warehouse.Test.Utils
 {
     public class CoreDataTest
     {

@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.SOInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.SPKInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SOModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SOViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.SOControllers;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.SOInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.SPKInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.SOModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SOViewModel;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.SOControllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -17,7 +17,7 @@ using System.Security.Claims;
 using System.Text;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.SOControllerTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.SOControllerTests
 {
     public class SOControllertest
     {

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.SPKDocControllerFacades
+namespace Com.Anqa.Service.Warehouse.Test.Facades.SPKDocControllerFacades
 {
     public class SPKDocItemsFromFinihsingOutsViewModelTest
     {

@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades.Stores;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.Stores.ReturnToCenterInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.Stores.TransferStocksInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.TransferModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.TransferViewModels;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.Stores.ReturnToCenterController;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades.Stores;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.Stores.ReturnToCenterInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.Stores.TransferStocksInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.TransferViewModels;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.Stores.ReturnToCenterController;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +28,7 @@ using System.Security.Claims;
 using System.Text;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.Store.ReturnToCenterTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.Store.ReturnToCenterTests
 {
 	public class ReturnToCenterControllerTest
 	{

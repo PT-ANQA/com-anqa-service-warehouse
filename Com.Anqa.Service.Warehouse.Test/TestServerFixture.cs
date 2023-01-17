@@ -1,12 +1,12 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Services;
 //using Com.MM.Service.Warehouse.Test.DataUtils.ExpeditionDataUtil;
 //using Com.MM.Service.Warehouse.Test.DataUtils.PurchaseRequestDataUtils;
 //using Com.MM.Service.Warehouse.Test.DataUtils.InternalPurchaseOrderDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi;
-using Com.BatikSolo.Service.Warehouse.WebApi.Helpers;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi;
+using Com.Anqa.Service.Warehouse.WebApi.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
@@ -25,11 +25,11 @@ using Xunit;
 //using Com.MM.Service.Warehouse.Test.DataUtils.UnitReceiptNoteDataUtils;
 //using Com.MM.Service.Warehouse.Test.DataUtils.UnitPaymentCorrectionNoteDataUtils;
 //using Com.MM.Service.Warehouse.Test.DataUtils.UnitPaymentOrderDataUtils;
-using Com.BatikSolo.Service.Warehouse.Lib.Utilities.Currencies;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.TransferDataUtils;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
+using Com.Anqa.Service.Warehouse.Lib.Utilities.Currencies;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.TransferDataUtils;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.SPKDocDataUtils;
 
-namespace Com.BatikSolo.Service.Warehouse.Test
+namespace Com.Anqa.Service.Warehouse.Test
 {
     public class TestServerFixture
     {
@@ -42,11 +42,11 @@ namespace Com.BatikSolo.Service.Warehouse.Test
             IConfigurationRoot configuration = new ConfigurationBuilder()
                 .AddInMemoryCollection(new List<KeyValuePair<string, string>>
                 {
-                    //BatikSoloTESTENVIRONMENT
-                    new KeyValuePair<string, string>(Constant.SECRET, "BatikSoloTESTENVIRONMENT"),
+                    //AnqaTESTENVIRONMENT
+                    new KeyValuePair<string, string>(Constant.SECRET, "AnqaTESTENVIRONMENT"),
                     new KeyValuePair<string, string>("ASPNETCORE_ENVIRONMENT", "Test"),
                     new KeyValuePair<string, string>(Constant.PURCHASING_ENDPOINT, "http://localhost:5004/v1/"),
-                   //new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=(localdb)\\mssqllocaldb;Database=com-BatikSolo-db-test;Trusted_Connection=True;MultipleActiveResultSets=true"),
+                   //new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=(localdb)\\mssqllocaldb;Database=com-Anqa-db-test;Trusted_Connection=True;MultipleActiveResultSets=true"),
                     new KeyValuePair<string, string>(Constant.DEFAULT_CONNECTION, "Server=localhost,1401;Database=com.mm.db.warehouse.controller.test;User Id=sa;Password=Standar123.;MultipleActiveResultSets=True;"),
                     new KeyValuePair<string, string>(Constant.MONGODB_CONNECTION, "mongodb://localhost:27017/admin")
                 })
