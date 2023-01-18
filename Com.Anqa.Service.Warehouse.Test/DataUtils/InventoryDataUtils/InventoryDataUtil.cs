@@ -1,13 +1,13 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
+﻿using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils
 {
     public class InventoryDataUtil
     {

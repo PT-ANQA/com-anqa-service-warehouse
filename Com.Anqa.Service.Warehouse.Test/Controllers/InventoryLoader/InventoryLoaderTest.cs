@@ -4,22 +4,22 @@ using System.Net;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.InventoryLoaderInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces.SPKInterfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.InventoryViewModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.InventoriesControlles;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.SpkDocsControllers;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.InventoryLoaderInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces.SPKInterfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.InventoryViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.SpkDocsViewModel;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.InventoriesControlles;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.SpkDocsControllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.InventoryLoader
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.InventoryLoader
 {
     public class InventoryLoaderTest
     {

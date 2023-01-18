@@ -3,17 +3,17 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Moq;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Facades.InventoryLoader
+namespace Com.Anqa.Service.Warehouse.Test.Facades.InventoryLoader
 {
     public class InventoryLoaderTests
     {

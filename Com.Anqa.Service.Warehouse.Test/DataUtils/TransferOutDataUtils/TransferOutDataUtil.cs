@@ -1,13 +1,13 @@
-﻿using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.TransferModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.TransferViewModels;
-using Com.BatikSolo.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
+﻿using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.TransferViewModels;
+using Com.Anqa.Service.Warehouse.Test.DataUtils.InventoryDataUtils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.DataUtils.TransferOutDataUtils
+namespace Com.Anqa.Service.Warehouse.Test.DataUtils.TransferOutDataUtils
 {
     public class TransferOutDataUtil
     {

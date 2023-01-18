@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using Com.BatikSolo.Service.Warehouse.Lib;
-using Com.BatikSolo.Service.Warehouse.Lib.Facades;
-using Com.BatikSolo.Service.Warehouse.Lib.Interfaces;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.Expeditions;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.InventoryModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Models.SPKDocsModel;
-using Com.BatikSolo.Service.Warehouse.Lib.Services;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.ExpeditionViewModel;
-using Com.BatikSolo.Service.Warehouse.Lib.ViewModels.TransferViewModels;
-using Com.BatikSolo.Service.Warehouse.Test.Helpers;
-using Com.BatikSolo.Service.Warehouse.WebApi.Controllers.v1.ExpeditionControllers;
+using Com.Anqa.Service.Warehouse.Lib;
+using Com.Anqa.Service.Warehouse.Lib.Facades;
+using Com.Anqa.Service.Warehouse.Lib.Interfaces;
+using Com.Anqa.Service.Warehouse.Lib.Models.Expeditions;
+using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
+using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
+using Com.Anqa.Service.Warehouse.Lib.Services;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.ExpeditionViewModel;
+using Com.Anqa.Service.Warehouse.Lib.ViewModels.TransferViewModels;
+using Com.Anqa.Service.Warehouse.Test.Helpers;
+using Com.Anqa.Service.Warehouse.WebApi.Controllers.v1.ExpeditionControllers;
 using Com.Moonlay.NetCore.Lib.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +29,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Com.BatikSolo.Service.Warehouse.Test.Controllers.ExpeditionTests
+namespace Com.Anqa.Service.Warehouse.Test.Controllers.ExpeditionTests
 {
     public class ExpeditionControllerTest
     {
