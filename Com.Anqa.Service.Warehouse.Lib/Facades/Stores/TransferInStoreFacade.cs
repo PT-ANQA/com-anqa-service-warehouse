@@ -2,6 +2,7 @@
 using Com.Anqa.Service.Warehouse.Lib.Models.InventoryModel;
 using Com.Anqa.Service.Warehouse.Lib.Models.SPKDocsModel;
 using Com.Anqa.Service.Warehouse.Lib.Models.TransferModel;
+using Com.Anqa.Service.Warehouse.Lib.Utilities;
 using Com.Moonlay.Models;
 using Com.Moonlay.NetCore.Lib;
 using HashidsNet;
@@ -61,24 +62,18 @@ namespace Com.Anqa.Service.Warehouse.Lib.Facades.Stores
             return Tuple.Create(Data, TotalData, OrderDictionary);
         }
 
-		public Tuple<List<SPKDocs>, int, Dictionary<string, string>> ReadPendingStore(string destinationName,int Page = 1, int Size = 25, string Order = "{}", string Keyword = null, string Filter = "{}")
+        public Tuple<List<SPKDocs>, int, Dictionary<string, string>> ReadPendingStore(string token, int Page = 1, int Size = 25, string Order = "{}", string Keyword = null, string Filter = "{}")
         {
-			String[] strlist = destinationName.Split(";");
+            var stores = TokenDecrypter.GetStore(token);
 
-			List<string> destName = new List<string>();
-			foreach (String s in strlist)
-			{
-				destName.Add(s);
-			}
-			IQueryable<SPKDocs> Query = this.dbSetSpk.Include(m => m.Items).Where(i=>i.IsDistributed == true && i.IsReceived == false && destName.Contains(i.DestinationCode) && i.DestinationCode != "GDG.01" );
+            IQueryable<SPKDocs> Query = this.dbSetSpk.Include(m => m.Items).Where(i => i.IsDistributed == true && i.IsReceived == false && stores.Contains(i.DestinationCode) && i.DestinationCode != "GDG.01");
 
-
-			List<string> searchAttributes = new List<string>()
+            List<string> searchAttributes = new List<string>()
             {
                 "Code","DestinationName","SourceName","Reference","PackingList"
             };
 
-            foreach(var i in Query)
+            foreach (var i in Query)
             {
                 if (/*i.Reference != null || i.Reference != ""*/ !String.IsNullOrWhiteSpace(i.Reference) && i.Reference.Contains("RTT"))
                 {
@@ -119,7 +114,7 @@ namespace Com.Anqa.Service.Warehouse.Lib.Facades.Stores
             return Tuple.Create(Data, TotalData, OrderDictionary);
         }
 
-		public Tuple<List<SPKDocs>, int, Dictionary<string, string>> ReadPending(int Page = 1, int Size = 25, string Order = "{}", string Keyword = null, string Filter = "{}")
+        public Tuple<List<SPKDocs>, int, Dictionary<string, string>> ReadPending(int Page = 1, int Size = 25, string Order = "{}", string Keyword = null, string Filter = "{}")
 		{
 			IQueryable<SPKDocs> Query = this.dbSetSpk.Include(m => m.Items).Where(i => i.IsDistributed == true && i.IsReceived == false);
 
